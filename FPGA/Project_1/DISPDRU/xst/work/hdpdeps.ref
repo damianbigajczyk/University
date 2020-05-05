@@ -1,0 +1,29 @@
+V3 15
+FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/CNT10.vhd" 2019/05/28.13:24:39 P.20131013
+EN work/CNT10 1559643426 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/CNT10.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CNT10/Behavioral 1559643427 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/CNT10.vhd" \
+      EN work/CNT10 1559643426
+FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Project_1/DISPDRU/DISPDRU.vhd" 2019/06/04.12:17:01 P.20131013
+EN work/DISPDRU 1559643430 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Project_1/DISPDRU/DISPDRU.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/DISPDRU/Behavioral 1559643431 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Project_1/DISPDRU/DISPDRU.vhd" \
+      EN work/DISPDRU 1559643430 CP CNT10 CP Sterownik_wyswietlacza_LED
+FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/BINTO7SEG.vhd" 2019/04/30.13:58:06 P.20131013
+EN work/BINTO7SEG 1559643424 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/BINTO7SEG.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/BINTO7SEG/Behavioral 1559643425 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/BINTO7SEG.vhd" \
+      EN work/BINTO7SEG 1559643424
+FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/Sterownik_wyswietlacza_LED.vhd" 2019/04/30.14:44:51 P.20131013
+EN work/Sterownik_wyswietlacza_LED 1559643428 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/Sterownik_wyswietlacza_LED.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Sterownik_wyswietlacza_LED/Behavioral 1559643429 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/Sterownik_wyswietlacza_LED.vhd" \
+      EN work/Sterownik_wyswietlacza_LED 1559643428 CP BINTO7SEG

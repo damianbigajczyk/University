@@ -1,0 +1,8 @@
+AR cnt10 behavioral "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/CNT10.vhd" sub00/vhpl06 1559643427
+EN cnt10 NULL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/CNT10.vhd" sub00/vhpl05 1559643426
+AR binto7seg behavioral "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/BINTO7SEG.vhd" sub00/vhpl01 1559643425
+EN dispdru NULL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Project_1/DISPDRU/DISPDRU.vhd" sub00/vhpl04 1559643430
+EN binto7seg NULL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/BINTO7SEG.vhd" sub00/vhpl00 1559643424
+AR dispdru behavioral "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Project_1/DISPDRU/DISPDRU.vhd" sub00/vhpl07 1559643431
+EN sterownik_wyswietlacza_led NULL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/Sterownik_wyswietlacza_LED.vhd" sub00/vhpl02 1559643428
+AR sterownik_wyswietlacza_led behavioral "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/Sterownik_wyswietlacza_LED.vhd" sub00/vhpl03 1559643429

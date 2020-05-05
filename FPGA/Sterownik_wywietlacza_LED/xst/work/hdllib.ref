@@ -1,0 +1,4 @@
+AR binto7seg behavioral "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/BINTO7SEG.vhd" sub00/vhpl01 1556628295
+EN binto7seg NULL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/BINTO7SEG.vhd" sub00/vhpl00 1556628294
+EN sterownik_wyswietlacza_led NULL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/Sterownik_wyswietlacza_LED.vhd" sub00/vhpl02 1556628296
+AR sterownik_wyswietlacza_led behavioral "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/Sterownik_wyswietlacza_LED.vhd" sub00/vhpl03 1556628297

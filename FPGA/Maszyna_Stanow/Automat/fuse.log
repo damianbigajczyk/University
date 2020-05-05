@@ -1,0 +1,18 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Maszyna_Stanow/Automat/Automat_2_TEST_isim_beh.exe" -prj "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Maszyna_Stanow/Automat/Automat_2_TEST_beh.prj" "work.Automat_2_TEST" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Maszyna_Stanow/Automat/Automat_2.vhd" into library work
+Parsing VHDL file "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Maszyna_Stanow/Automat/Automat_2_TEST.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity Automat_2 [automat_2_default]
+Compiling architecture behavior of entity automat_2_test
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Maszyna_Stanow/Automat/Automat_2_TEST_isim_beh.exe
+Fuse Memory Usage: 29288 KB
+Fuse CPU Usage: 452 ms

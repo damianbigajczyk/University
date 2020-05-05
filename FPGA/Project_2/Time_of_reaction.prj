@@ -1,0 +1,4 @@
+vhdl work "BINTO7SEG.vhd"
+vhdl work "Sterownik_wyswietlacza_LED.vhd"
+vhdl work "CNT10.vhd"
+vhdl work "Time_of_reaction.vhd"

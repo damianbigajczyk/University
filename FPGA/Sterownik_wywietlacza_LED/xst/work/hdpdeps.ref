@@ -1,0 +1,15 @@
+V3 7
+FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/BINTO7SEG.vhd" 2019/04/30.13:58:06 P.20131013
+EN work/BINTO7SEG 1556628294 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/BINTO7SEG.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/BINTO7SEG/Behavioral 1556628295 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/BINTO7SEG.vhd" \
+      EN work/BINTO7SEG 1556628294
+FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/Sterownik_wyswietlacza_LED.vhd" 2019/04/30.14:44:51 P.20131013
+EN work/Sterownik_wyswietlacza_LED 1556628296 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/Sterownik_wyswietlacza_LED.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Sterownik_wyswietlacza_LED/Behavioral 1556628297 \
+      FL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/Sterownik_wyswietlacza_LED.vhd" \
+      EN work/Sterownik_wyswietlacza_LED 1556628296 CP BINTO7SEG

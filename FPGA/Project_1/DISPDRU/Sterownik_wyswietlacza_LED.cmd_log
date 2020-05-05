@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Project_1/DISPDRU/Sterownik_wyswietlacza_LED.xst" -ofn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Project_1/DISPDRU/Sterownik_wyswietlacza_LED.syr" 

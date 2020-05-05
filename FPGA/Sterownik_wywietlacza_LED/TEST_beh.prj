@@ -1,0 +1,3 @@
+vhdl work "BINTO7SEG.vhd"
+vhdl work "Sterownik_wyswietlacza_LED.vhd"
+vhdl work "TEST.vhd"

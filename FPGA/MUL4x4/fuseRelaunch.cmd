@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/MUL4x4/MUL4x4_test_isim_beh.exe" -prj "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/MUL4x4/MUL4x4_test_beh.prj" "work.MUL4x4_test" 

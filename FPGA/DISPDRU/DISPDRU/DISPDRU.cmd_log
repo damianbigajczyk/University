@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/DISPDRU/DISPDRU/DISPDRU.xst" -ofn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/DISPDRU/DISPDRU/DISPDRU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "DISPDRU.ngc" DISPDRU.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DISPDRU_map.ncd DISPDRU.ngd DISPDRU.pcf 
+xst -intstyle ise -ifn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/DISPDRU/DISPDRU/DISPDRU.xst" -ofn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/DISPDRU/DISPDRU/DISPDRU.syr" 

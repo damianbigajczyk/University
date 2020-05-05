@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Maszyna_Stanow/Automat/Automat_2.xst" -ofn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Maszyna_Stanow/Automat/Automat_2.syr" 

@@ -1,0 +1,4 @@
+AR counter behavioral "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/Counter.vhd" sub00/vhpl03 1559045778
+AR cnt10 behavioral "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/CNT10.vhd" sub00/vhpl01 1559045776
+EN cnt10 NULL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/CNT10.vhd" sub00/vhpl00 1559045775
+EN counter NULL "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/Counter.vhd" sub00/vhpl02 1559045777

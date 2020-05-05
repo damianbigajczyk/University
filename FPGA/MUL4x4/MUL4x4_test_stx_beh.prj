@@ -1,0 +1,4 @@
+vhdl isim_temp "SUM1B.vhd"
+vhdl isim_temp "SUM8B.vhd"
+vhdl isim_temp "MUL4x4.vhd"
+vhdl isim_temp "MUL4x4_test.vhd"

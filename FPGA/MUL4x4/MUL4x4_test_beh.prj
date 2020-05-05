@@ -1,0 +1,4 @@
+vhdl work "SUM1B.vhd"
+vhdl work "SUM8B.vhd"
+vhdl work "MUL4x4.vhd"
+vhdl work "MUL4x4_test.vhd"

@@ -1,0 +1,3 @@
+vhdl isim_temp "BINTO7SEG.vhd"
+vhdl isim_temp "Sterownik_wyswietlacza_LED.vhd"
+vhdl isim_temp "TEST.vhd"

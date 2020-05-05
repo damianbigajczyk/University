@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/LED3/LED3/LED3.xst" -ofn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/LED3/LED3/LED3.syr" 
+xst -intstyle ise -ifn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/LED3/LED3/LED3.xst" -ofn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/LED3/LED3/LED3.syr" 
+xst -intstyle ise -ifn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/LED3/LED3/LED3.xst" -ofn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/LED3/LED3/LED3.syr" 
+xst -intstyle ise -ifn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/LED3/LED3/LED3.xst" -ofn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/LED3/LED3/LED3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "LED3.ngc" LED3.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "LED3.ngc" LED3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LED3_map.ncd LED3.ngd LED3.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "LED3.ngc" LED3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LED3_map.ncd LED3.ngd LED3.pcf 

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/236182/Lab_4/BINTO7SEG/SUM1B.xst" -ofn "D:/236182/Lab_4/BINTO7SEG/SUM1B.syr" 
+xst -intstyle ise -ifn "D:/236182/Lab_4/BINTO7SEG/SUM1B.xst" -ofn "D:/236182/Lab_4/BINTO7SEG/SUM1B.syr" 

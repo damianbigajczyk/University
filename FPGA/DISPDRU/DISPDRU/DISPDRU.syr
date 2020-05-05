@@ -1,0 +1,767 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: DISPDRU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DISPDRU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DISPDRU"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : DISPDRU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Damian Bigajczyk\Desktop\WorkSpace\FPGA\Sterownik_wywietlacza_LED\BINTO7SEG.vhd" into library work
+Parsing entity <BINTO7SEG>.
+Parsing architecture <Behavioral> of entity <binto7seg>.
+Parsing VHDL file "C:\Users\Damian Bigajczyk\Desktop\WorkSpace\FPGA\Sterownik_wywietlacza_LED\Sterownik_wyswietlacza_LED.vhd" into library work
+Parsing entity <Sterownik_wyswietlacza_LED>.
+Parsing architecture <Behavioral> of entity <sterownik_wyswietlacza_led>.
+Parsing VHDL file "C:\Users\Damian Bigajczyk\Desktop\WorkSpace\FPGA\CNT10\CNT10\CNT10.vhd" into library work
+Parsing entity <CNT10>.
+Parsing architecture <Behavioral> of entity <cnt10>.
+Parsing VHDL file "C:\Users\Damian Bigajczyk\Desktop\WorkSpace\FPGA\DISPDRU\DISPDRU\DISPDRU.vhd" into library work
+Parsing entity <DISPDRU>.
+Parsing architecture <Behavioral> of entity <dispdru>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <DISPDRU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CNT10> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Sterownik_wyswietlacza_LED> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BINTO7SEG> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <DISPDRU>.
+    Related source file is "C:\Users\Damian Bigajczyk\Desktop\WorkSpace\FPGA\DISPDRU\DISPDRU\DISPDRU.vhd".
+INFO:Xst:3210 - "C:\Users\Damian Bigajczyk\Desktop\WorkSpace\FPGA\DISPDRU\DISPDRU\DISPDRU.vhd" line 84: Output port <C> of the instance <C3> is unconnected or connected to loadless signal.
+    Found 19-bit register for signal <CNT2>.
+    Found 1-bit register for signal <CLK1>.
+    Found 1-bit register for signal <CLK2>.
+    Found 20-bit register for signal <CNT1>.
+    Found 20-bit adder for signal <CNT1[19]_GND_5_o_add_0_OUT> created at line 66.
+    Found 19-bit adder for signal <CNT2[18]_GND_5_o_add_1_OUT> created at line 67.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+Unit <DISPDRU> synthesized.
+
+Synthesizing Unit <CNT10>.
+    Related source file is "C:\Users\Damian Bigajczyk\Desktop\WorkSpace\FPGA\CNT10\CNT10\CNT10.vhd".
+    Found 4-bit register for signal <QT>.
+    Found 1-bit register for signal <C>.
+    Found 4-bit adder for signal <QT[3]_GND_6_o_add_1_OUT> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <CNT10> synthesized.
+
+Synthesizing Unit <Sterownik_wyswietlacza_LED>.
+    Related source file is "C:\Users\Damian Bigajczyk\Desktop\WorkSpace\FPGA\Sterownik_wywietlacza_LED\Sterownik_wyswietlacza_LED.vhd".
+    Found 2-bit register for signal <QT>.
+    Found 4-bit register for signal <X>.
+    Found 1-bit register for signal <DPX>.
+    Found 4-bit register for signal <AN>.
+    Found 2-bit adder for signal <QT[1]_GND_7_o_add_1_OUT> created at line 46.
+    Found 4x4-bit Read Only RAM for signal <AN[3]_PWR_7_o_mux_14_OUT>
+    Found 4-bit 4-to-1 multiplexer for signal <X[3]_X0[3]_mux_10_OUT> created at line 49.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <Sterownik_wyswietlacza_LED> synthesized.
+
+Synthesizing Unit <BINTO7SEG>.
+    Related source file is "C:\Users\Damian Bigajczyk\Desktop\WorkSpace\FPGA\Sterownik_wywietlacza_LED\BINTO7SEG.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <SEG<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <SEG<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <SEG<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <SEG<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <SEG<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <SEG<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <SEG<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <SEG<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   8 Latch(s).
+	inferred  10 Multiplexer(s).
+Unit <BINTO7SEG> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 7
+ 19-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+ 4-bit adder                                           : 4
+# Registers                                            : 16
+ 1-bit register                                        : 7
+ 19-bit register                                       : 1
+ 2-bit register                                        : 1
+ 20-bit register                                       : 1
+ 4-bit register                                        : 6
+# Latches                                              : 8
+ 1-bit latch                                           : 8
+# Multiplexers                                         : 16
+ 1-bit 2-to-1 multiplexer                              : 10
+ 2-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 4
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <SEG_7> (without init value) has a constant value of 1 in block <SEG7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DPX> (without init value) has a constant value of 0 in block <DISPDRU1>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <CNT10>.
+The following registers are absorbed into counter <QT>: 1 register on signal <QT>.
+Unit <CNT10> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DISPDRU>.
+The following registers are absorbed into counter <CNT2>: 1 register on signal <CNT2>.
+The following registers are absorbed into counter <CNT1>: 1 register on signal <CNT1>.
+Unit <DISPDRU> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Sterownik_wyswietlacza_LED>.
+INFO:Xst:3231 - The small RAM <Mram_AN[3]_PWR_7_o_mux_14_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <QT>            |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Sterownik_wyswietlacza_LED> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Counters                                             : 6
+ 19-bit up counter                                     : 1
+ 20-bit up counter                                     : 1
+ 4-bit up counter                                      : 4
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 10
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <DPX> (without init value) has a constant value of 0 in block <Sterownik_wyswietlacza_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SEG_7> (without init value) has a constant value of 1 in block <BINTO7SEG>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <C3/C> of sequential type is unconnected in block <DISPDRU>.
+INFO:Xst:2146 - In block <DISPDRU>, Counter <CNT1> <CNT2> are equivalent, XST will keep only <CNT1>.
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    SEG_0 in unit <BINTO7SEG>
+    SEG_1 in unit <BINTO7SEG>
+    SEG_2 in unit <BINTO7SEG>
+    SEG_3 in unit <BINTO7SEG>
+    SEG_4 in unit <BINTO7SEG>
+    SEG_5 in unit <BINTO7SEG>
+    SEG_6 in unit <BINTO7SEG>
+
+
+Optimizing unit <DISPDRU> ...
+
+Optimizing unit <Sterownik_wyswietlacza_LED> ...
+
+Optimizing unit <BINTO7SEG> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DISPDRU, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 51
+ Flip-Flops                                            : 51
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : DISPDRU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 105
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 19
+#      LUT2                        : 5
+#      LUT3                        : 4
+#      LUT4                        : 19
+#      LUT5                        : 1
+#      LUT6                        : 9
+#      MUXCY                       : 19
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 58
+#      FD                          : 22
+#      FDC                         : 18
+#      FDE                         : 11
+#      LD                          : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              51  out of  18224     0%  
+ Number of Slice LUTs:                   64  out of   9112     0%  
+    Number used as Logic:                64  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     64
+   Number with an unused Flip Flop:      13  out of     64    20%  
+   Number with an unused LUT:             0  out of     64     0%  
+   Number of fully used LUT-FF pairs:    51  out of     64    79%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
+    IOB Flip Flops/Latches:               7
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)    | Load  |
+-----------------------------------+--------------------------+-------+
+C1/C                               | NONE(C2/C)               | 5     |
+C0/C                               | NONE(C1/C)               | 5     |
+CLK1                               | NONE(C0/C)               | 5     |
+CLK                                | BUFGP                    | 22    |
+C2/C                               | NONE(C3/QT_0)            | 4     |
+CLK2                               | NONE(DISPDRU1/AN_3)      | 10    |
+GND_5_o_INV_4_o_norst              | NONE(DISPDRU1/SEG7/SEG_0)| 7     |
+-----------------------------------+--------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.760ns (Maximum Frequency: 362.306MHz)
+   Minimum input arrival time before clock: 3.703ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'C1/C'
+  Clock period: 2.078ns (frequency: 481.325MHz)
+  Total number of paths / destination ports: 16 / 5
+-------------------------------------------------------------------------
+Delay:               2.078ns (Levels of Logic = 1)
+  Source:            C2/QT_0 (FF)
+  Destination:       C2/QT_0 (FF)
+  Source Clock:      C1/C rising
+  Destination Clock: C1/C rising
+
+  Data Path: C2/QT_0 to C2/QT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.744  C2/QT_0 (C2/QT_0)
+     INV:I->O              1   0.206   0.579  C2/Mcount_QT_xor<0>11_INV_0 (C2/Mcount_QT)
+     FDC:D                     0.102          C2/QT_0
+    ----------------------------------------
+    Total                      2.078ns (0.755ns logic, 1.323ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'C0/C'
+  Clock period: 2.078ns (frequency: 481.325MHz)
+  Total number of paths / destination ports: 16 / 5
+-------------------------------------------------------------------------
+Delay:               2.078ns (Levels of Logic = 1)
+  Source:            C1/QT_0 (FF)
+  Destination:       C1/QT_0 (FF)
+  Source Clock:      C0/C rising
+  Destination Clock: C0/C rising
+
+  Data Path: C1/QT_0 to C1/QT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.744  C1/QT_0 (C1/QT_0)
+     INV:I->O              1   0.206   0.579  C1/Mcount_QT_xor<0>11_INV_0 (C1/Mcount_QT)
+     FDC:D                     0.102          C1/QT_0
+    ----------------------------------------
+    Total                      2.078ns (0.755ns logic, 1.323ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK1'
+  Clock period: 2.078ns (frequency: 481.325MHz)
+  Total number of paths / destination ports: 16 / 5
+-------------------------------------------------------------------------
+Delay:               2.078ns (Levels of Logic = 1)
+  Source:            C0/QT_0 (FF)
+  Destination:       C0/QT_0 (FF)
+  Source Clock:      CLK1 rising
+  Destination Clock: CLK1 rising
+
+  Data Path: C0/QT_0 to C0/QT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.744  C0/QT_0 (C0/QT_0)
+     INV:I->O              1   0.206   0.579  C0/Mcount_QT_xor<0>11_INV_0 (C0/Mcount_QT)
+     FDC:D                     0.102          C0/QT_0
+    ----------------------------------------
+    Total                      2.078ns (0.755ns logic, 1.323ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.760ns (frequency: 362.306MHz)
+  Total number of paths / destination ports: 249 / 22
+-------------------------------------------------------------------------
+Delay:               2.760ns (Levels of Logic = 2)
+  Source:            CNT1_4 (FF)
+  Destination:       CLK1 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: CNT1_4 to CLK1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.995  CNT1_4 (CNT1_4)
+     LUT5:I0->O            1   0.203   0.808  GND_5_o_GND_5_o_equal_3_o<19>_SW0_SW0 (N8)
+     LUT6:I3->O            1   0.205   0.000  CLK1_rstpot1 (CLK1_rstpot)
+     FD:D                      0.102          CLK1
+    ----------------------------------------
+    Total                      2.760ns (0.957ns logic, 1.803ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'C2/C'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            C3/QT_0 (FF)
+  Destination:       C3/QT_0 (FF)
+  Source Clock:      C2/C rising
+  Destination Clock: C2/C rising
+
+  Data Path: C3/QT_0 to C3/QT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.714  C3/QT_0 (C3/QT_0)
+     INV:I->O              1   0.206   0.579  C3/Mcount_QT_xor<0>11_INV_0 (C3/Mcount_QT)
+     FDC:D                     0.102          C3/QT_0
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK2'
+  Clock period: 2.190ns (frequency: 456.663MHz)
+  Total number of paths / destination ports: 19 / 10
+-------------------------------------------------------------------------
+Delay:               2.190ns (Levels of Logic = 1)
+  Source:            DISPDRU1/QT_0 (FF)
+  Destination:       DISPDRU1/QT_0 (FF)
+  Source Clock:      CLK2 rising
+  Destination Clock: CLK2 rising
+
+  Data Path: DISPDRU1/QT_0 to DISPDRU1/QT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.447   0.856  DISPDRU1/QT_0 (DISPDRU1/QT_0)
+     INV:I->O              1   0.206   0.579  DISPDRU1/Mmux_QT[1]_QT[1]_mux_20_OUT11_INV_0 (DISPDRU1/QT[1]_QT[1]_mux_20_OUT<0>)
+     FDC:D                     0.102          DISPDRU1/QT_0
+    ----------------------------------------
+    Total                      2.190ns (0.755ns logic, 1.435ns route)
+                                       (34.5% logic, 65.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'C1/C'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.703ns (Levels of Logic = 2)
+  Source:            BTN0 (PAD)
+  Destination:       C2/C (FF)
+  Destination Clock: C1/C rising
+
+  Data Path: BTN0 to C2/C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.222   1.071  BTN0_IBUF (BTN0_IBUF)
+     INV:I->O             11   0.206   0.882  C0/RESET_inv1_INV_0 (C0/RESET_inv)
+     FDE:CE                    0.322          C2/C
+    ----------------------------------------
+    Total                      3.703ns (1.750ns logic, 1.953ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'C0/C'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.703ns (Levels of Logic = 2)
+  Source:            BTN0 (PAD)
+  Destination:       C1/C (FF)
+  Destination Clock: C0/C rising
+
+  Data Path: BTN0 to C1/C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.222   1.071  BTN0_IBUF (BTN0_IBUF)
+     INV:I->O             11   0.206   0.882  C0/RESET_inv1_INV_0 (C0/RESET_inv)
+     FDE:CE                    0.322          C1/C
+    ----------------------------------------
+    Total                      3.703ns (1.750ns logic, 1.953ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK1'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.703ns (Levels of Logic = 2)
+  Source:            BTN0 (PAD)
+  Destination:       C0/C (FF)
+  Destination Clock: CLK1 rising
+
+  Data Path: BTN0 to C0/C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.222   1.071  BTN0_IBUF (BTN0_IBUF)
+     INV:I->O             11   0.206   0.882  C0/RESET_inv1_INV_0 (C0/RESET_inv)
+     FDE:CE                    0.322          C0/C
+    ----------------------------------------
+    Total                      3.703ns (1.750ns logic, 1.953ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'C2/C'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.723ns (Levels of Logic = 1)
+  Source:            BTN0 (PAD)
+  Destination:       C3/QT_0 (FF)
+  Destination Clock: C2/C rising
+
+  Data Path: BTN0 to C3/QT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.222   1.071  BTN0_IBUF (BTN0_IBUF)
+     FDC:CLR                   0.430          C3/QT_0
+    ----------------------------------------
+    Total                      2.723ns (1.652ns logic, 1.071ns route)
+                                       (60.7% logic, 39.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK2'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.703ns (Levels of Logic = 2)
+  Source:            BTN0 (PAD)
+  Destination:       DISPDRU1/AN_3 (FF)
+  Destination Clock: CLK2 rising
+
+  Data Path: BTN0 to DISPDRU1/AN_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.222   1.071  BTN0_IBUF (BTN0_IBUF)
+     INV:I->O             11   0.206   0.882  C0/RESET_inv1_INV_0 (C0/RESET_inv)
+     FDE:CE                    0.322          DISPDRU1/AN_0
+    ----------------------------------------
+    Total                      3.703ns (1.750ns logic, 1.953ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK2'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            DISPDRU1/AN_3 (FF)
+  Destination:       AN<3> (PAD)
+  Source Clock:      CLK2 rising
+
+  Data Path: DISPDRU1/AN_3 to AN<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  DISPDRU1/AN_3 (DISPDRU1/AN_3)
+     OBUF:I->O                 2.571          AN_3_OBUF (AN<3>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock C0/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C0/C           |    2.078|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock C1/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C1/C           |    2.078|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock C2/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C2/C           |    2.048|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.760|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK1           |    2.078|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C0/C           |    1.744|         |         |         |
+C1/C           |    1.601|         |         |         |
+C2/C           |    1.697|         |         |         |
+CLK1           |    1.499|         |         |         |
+CLK2           |    2.190|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.45 secs
+ 
+--> 
+
+Total memory usage is 4523208 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

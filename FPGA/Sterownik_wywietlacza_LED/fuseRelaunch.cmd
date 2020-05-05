@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/TEST_isim_beh.exe" -prj "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/Sterownik_wywietlacza_LED/TEST_beh.prj" "work.TEST" 

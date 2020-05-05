@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/Counter_test_isim_beh.exe" -prj "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/CNT10/CNT10/Counter_test_beh.prj" "work.Counter_test" 

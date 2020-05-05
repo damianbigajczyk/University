@@ -1,0 +1,3 @@
+vhdl work "SUM1B.vhd"
+vhdl work "SUM4B.vhd"
+vhdl work "SUM4B_Test.vhd"

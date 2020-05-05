@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/MUL4x4/SUM8B.xst" -ofn "C:/Users/Damian Bigajczyk/Desktop/WorkSpace/FPGA/MUL4x4/SUM8B.syr" 

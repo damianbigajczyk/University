@@ -1,0 +1,10 @@
+Command line:
+   SUM4B_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49750
+
+Sat Mar 23 06:24:44 2019
+
+
+ Elaboration Time: 0.0624 sec

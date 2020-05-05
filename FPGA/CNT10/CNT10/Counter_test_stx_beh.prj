@@ -1,0 +1,3 @@
+vhdl isim_temp "CNT10.vhd"
+vhdl isim_temp "Counter.vhd"
+vhdl isim_temp "Counter_test.vhd"

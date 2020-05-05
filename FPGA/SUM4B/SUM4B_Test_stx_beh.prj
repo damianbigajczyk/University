@@ -1,0 +1,3 @@
+vhdl isim_temp "SUM1B.vhd"
+vhdl isim_temp "SUM4B.vhd"
+vhdl isim_temp "SUM4B_Test.vhd"

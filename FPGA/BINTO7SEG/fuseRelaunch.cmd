@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/236182/Lab_4/BINTO7SEG/BINTO7SEG_test_isim_beh.exe" -prj "D:/236182/Lab_4/BINTO7SEG/BINTO7SEG_test_beh.prj" "work.BINTO7SEG_test" 
