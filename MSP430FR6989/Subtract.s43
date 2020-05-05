@@ -1,0 +1,19 @@
+#include "msp430.h"          
+
+        NAME    Subtract
+
+        EXTERN  get_Celsjusz  
+        EXTERN  temp
+        EXTERN  Ce
+;=====================================================
+; Subtract
+;=====================================================
+        PUBLIC  Subtract        
+        RSEG    CODE             
+Subtract;
+        mov.w &temp,R12
+        mov.w #0x6AB3,R13
+        calla #get_Celsjusz
+        mov.w R12,&Ce
+        reta
+        END

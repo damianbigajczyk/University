@@ -1,0 +1,16 @@
+#include "msp430.h" 
+
+        NAME    Kelwin
+        EXTERN  Ce
+        EXTERN  K
+;=======================================================       
+; get_Kelwin
+;=======================================================
+        PUBLIC  get_Kelwin        
+        RSEG    CODE                  
+get_Kelwin;  
+        mov.w   &Ce,R12
+        add.w   #0x6AB3,R12
+        mov.w   R12, &K
+        reta
+        END
