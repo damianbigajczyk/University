@@ -1,0 +1,5 @@
+cola,2.00
+fanta,1.50
+sprite,2.00
+woda,1.00
+ice tea,1.50
